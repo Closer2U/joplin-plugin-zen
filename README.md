@@ -2,8 +2,10 @@
 
 A focused writing mode for Joplin’s Markdown editor, inspired by iA Writer.
 
-<img src="_screenshots/ZenMode.png" width="600">
-<img src="_screenshots/StyleChecks_turnedOff.png" width="600">
+<div align="center">
+<img src="_screenshots/ZenMode.png" width="1080">
+<img src="_screenshots/StyleChecks_turnedOff.png" width="1080">
+</div>
 
 ## What it does
 
