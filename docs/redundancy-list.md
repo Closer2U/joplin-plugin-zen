@@ -21,6 +21,6 @@ Built-in examples currently targeted by the plugin include:
 - return back
 - unexpected surprise
 
-You can add your own in the plugin settings under:
+Add custom redundancies in a dedicated Joplin note and paste that note link/ID into the plugin setting:
 
-- Extra redundancies to flag
+- Extra redundancies note link or ID

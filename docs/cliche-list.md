@@ -19,7 +19,6 @@ Built-in examples currently targeted by the plugin include:
 - think outside the box
 - tip of the iceberg
 
-You can add your own in the plugin settings under:
+Add custom clichés in a dedicated Joplin note and paste that note link/ID into the plugin setting:
 
-- Extra clichés to flag
-- Style check: custom patterns / exceptions
+- Extra clichés note link or ID

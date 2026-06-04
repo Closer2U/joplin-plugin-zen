@@ -73,25 +73,11 @@
   background: transparent !important;
 }
 
-.cm-editor .jzm-syntax-adjective {
-  --jzm-syntax-color: var(--jzm-syntax-adjective-color, #a87a3b);
-}
-
-.cm-editor .jzm-syntax-noun {
-  --jzm-syntax-color: var(--jzm-syntax-noun-color, #cf5c57);
-}
-
-.cm-editor .jzm-syntax-adverb {
-  --jzm-syntax-color: var(--jzm-syntax-adverb-color, #8c63d9);
-}
-
-.cm-editor .jzm-syntax-verb {
-  --jzm-syntax-color: var(--jzm-syntax-verb-color, #4b86d9);
-}
-
-.cm-editor .jzm-syntax-conjunction {
-  --jzm-syntax-color: var(--jzm-syntax-conjunction-color, #49a66a);
-}
+.cm-editor .jzm-syntax-adjective { --jzm-syntax-color: var(--jzm-syntax-adjective-color, #a87a3b); }
+.cm-editor .jzm-syntax-noun { --jzm-syntax-color: var(--jzm-syntax-noun-color, #cf5c57); }
+.cm-editor .jzm-syntax-adverb { --jzm-syntax-color: var(--jzm-syntax-adverb-color, #8c63d9); }
+.cm-editor .jzm-syntax-verb { --jzm-syntax-color: var(--jzm-syntax-verb-color, #4b86d9); }
+.cm-editor .jzm-syntax-conjunction { --jzm-syntax-color: var(--jzm-syntax-conjunction-color, #49a66a); }
 
 .cm-editor.jzm-syntax-mode-color .jzm-syntax {
   color: var(--jzm-syntax-color) !important;
@@ -114,29 +100,12 @@
   text-underline-offset: 0.12em;
 }
 
-.cm-editor .jzm-stylecheck-fillers {
-  --jzm-stylecheck-color: var(--jzm-stylecheck-fillers-color, #e9b552);
-}
-
-.cm-editor .jzm-stylecheck-cliches {
-  --jzm-stylecheck-color: var(--jzm-stylecheck-cliches-color, #e76262);
-}
-
-.cm-editor .jzm-stylecheck-redundancies {
-  --jzm-stylecheck-color: var(--jzm-stylecheck-redundancies-color, #e79662);
-}
-
-.cm-editor .jzm-stylecheck-weak {
-  --jzm-stylecheck-color: var(--jzm-stylecheck-weak-color, #6eaaf0);
-}
-
-.cm-editor .jzm-stylecheck-custom {
-  --jzm-stylecheck-color: var(--jzm-stylecheck-custom-color, #6eaaf0);
-}
-
-.cm-editor .jzm-stylecheck-repetition {
-  --jzm-stylecheck-color: var(--jzm-stylecheck-repetition-color, #d96ee0);
-}
+.cm-editor .jzm-stylecheck-fillers { --jzm-stylecheck-color: var(--jzm-stylecheck-fillers-color, #e9b552); }
+.cm-editor .jzm-stylecheck-cliches { --jzm-stylecheck-color: var(--jzm-stylecheck-cliches-color, #e76262); }
+.cm-editor .jzm-stylecheck-redundancies { --jzm-stylecheck-color: var(--jzm-stylecheck-redundancies-color, #e79662); }
+.cm-editor .jzm-stylecheck-weak { --jzm-stylecheck-color: var(--jzm-stylecheck-weak-color, #6eaaf0); }
+.cm-editor .jzm-stylecheck-custom { --jzm-stylecheck-color: var(--jzm-stylecheck-custom-color, #6eaaf0); }
+.cm-editor .jzm-stylecheck-repetition { --jzm-stylecheck-color: var(--jzm-stylecheck-repetition-color, #d96ee0); }
 
 .cm-editor.jzm-stylecheck-mode-strike .jzm-stylecheck:not(.jzm-stylecheck-repetition) {
   text-decoration-line: line-through;
@@ -198,4 +167,67 @@ body:has(.cm-editor.jzm-zen-active) .resizableLayoutItem.rli-editor > div {
 
 body:has(.cm-editor.jzm-zen-active) .note-editor-viewer-row {
   gap: 0 !important;
+}
+
+@font-face {
+  font-family: "iMWritingDuo Nerd Font";
+  src: url("../fonts/iMWritingDuoNerdFont-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iMWritingDuo Nerd Font";
+  src: url("../fonts/iMWritingDuoNerdFont-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iMWritingDuo Nerd Font";
+  src: url("../fonts/iMWritingDuoNerdFont-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iMWritingDuo Nerd Font";
+  src: url("../fonts/iMWritingDuoNerdFont-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+.cm-editor.jzm-zen-active .jzm-dim-text {
+  opacity: var(--jzm-inactive-opacity, 0.35) !important;
+}
+
+.cm-editor.jzm-zen-active .jzm-stylecheck-legend {
+  position: absolute;
+  left: 50%;
+  bottom: 0.75rem;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  max-width: min(92%, 52rem);
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--joplin-background-color, #fff) 82%, transparent);
+  color: var(--joplin-color, currentColor);
+  opacity: 0.25;
+  transition: opacity 150ms ease;
+  pointer-events: auto;
+  z-index: 20;
+  font-size: 0.85em;
+  line-height: 1.5;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+}
+
+.cm-editor.jzm-zen-active .jzm-stylecheck-legend:hover {
+  opacity: 1;
 }

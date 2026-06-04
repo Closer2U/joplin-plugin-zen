@@ -1,5 +1,2 @@
-import type Joplin from './Joplin';
-
-declare const joplin: Joplin;
-
+declare const joplin: any;
 export default joplin;

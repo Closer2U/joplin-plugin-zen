@@ -68,19 +68,6 @@ Configurable options:
 - add extra fillers / clichés / redundancies / weak phrases in settings
 - add custom patterns and exceptions in settings
 
-## Placeholder screenshots
-
-These are placeholder mockups for documentation only.
-
-### Zen focus mode
-![Placeholder Zen focus mode](images/screenshots/placeholder-zen-focus.png)
-
-### Syntax highlight
-![Placeholder syntax highlight](images/screenshots/placeholder-syntax-highlight.png)
-
-### Style check
-![Placeholder style check](images/screenshots/placeholder-style-check.png)
-
 ## Commands and shortcuts
 
 ### Zen mode
@@ -97,6 +84,33 @@ Useful for quickly switching between “writing” and “editing”.
   - menu: `View`
   - editor context menu
   - shortcut: `Ctrl+Alt+M`
+
+### Automatic default phrase-list notes
+
+On first start, if all four note-backed phrase-list settings are empty, the plugin creates four notes in the current notebook:
+
+- `Zen Mode — Extra Fillers`
+- `Zen Mode — Extra Clichés`
+- `Zen Mode — Extra Redundancies`
+- `Zen Mode — Extra Weak Phrases`
+
+It stores their note IDs in the settings. Users can move these notes to any notebook later; the plugin stores note IDs, so moving does not break the links.
+
+A command is also available:
+
+- `Create default Zen phrase-list notes`
+
+### Editor context-menu append commands
+
+The plugin registers editor context-menu commands for selected text:
+
+- `Zen: Add selection to fillers note`
+- `Zen: Add selection to clichés note`
+- `Zen: Add selection to redundancies note`
+- `Zen: Add selection to weak phrases note`
+
+These append the current CodeMirror selection to the corresponding configured note, avoiding duplicate entries.
+
 
 ## Custom phrase lists
 The plugin includes built-in phrase lists and also lets you extend them.
