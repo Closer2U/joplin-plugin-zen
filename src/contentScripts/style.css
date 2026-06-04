@@ -1,0 +1,201 @@
+.cm-editor.jzm-zen-active {
+  position: relative;
+  background: var(--joplin-background-color) !important;
+  color: var(--joplin-color) !important;
+}
+
+.cm-editor.jzm-zen-active.jzm-custom-background-color {
+  background: var(--jzm-background-color) !important;
+}
+
+.cm-editor.jzm-zen-active .cm-scroller {
+  padding-top: calc(42vh + var(--jzm-center-offset, 0vh));
+  padding-bottom: calc(46vh - var(--jzm-center-offset, 0vh));
+  background: inherit !important;
+}
+
+.cm-editor.jzm-zen-active .cm-content,
+.cm-editor.jzm-zen-active .cm-line {
+  max-width: var(--jzm-content-max-width, 46em);
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: var(--joplin-color) !important;
+  background: transparent !important;
+}
+
+.cm-editor.jzm-zen-active.jzm-custom-text-color .cm-content,
+.cm-editor.jzm-zen-active.jzm-custom-text-color .cm-line {
+  color: var(--jzm-text-color) !important;
+}
+
+.cm-editor.jzm-zen-active.jzm-custom-font-family .cm-content,
+.cm-editor.jzm-zen-active.jzm-custom-font-family .cm-line {
+  font-family: var(--jzm-font-family) !important;
+}
+
+.cm-editor.jzm-zen-active.jzm-custom-font-size .cm-content,
+.cm-editor.jzm-zen-active.jzm-custom-font-size .cm-line {
+  font-size: var(--jzm-font-size) !important;
+}
+
+.cm-editor.jzm-zen-active .cm-line *:not(.jzm-syntax):not(.jzm-stylecheck) {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  background: transparent !important;
+}
+
+.cm-editor.jzm-zen-active .cm-cursor,
+.cm-editor.jzm-zen-active .cm-dropCursor {
+  border-color: currentColor !important;
+}
+
+.cm-editor.jzm-zen-active .cm-selectionBackground,
+.cm-editor.jzm-zen-active .cm-content ::selection {
+  background: rgba(127, 127, 127, 0.25) !important;
+}
+
+.cm-editor.jzm-zen-active .cm-line {
+  transition: opacity 120ms ease;
+}
+
+.cm-editor.jzm-zen-active .cm-line.jzm-dim-line {
+  opacity: var(--jzm-inactive-opacity, 0.35) !important;
+}
+
+.cm-editor.jzm-zen-active .cm-line.jzm-active-paragraph-line {
+  opacity: 1 !important;
+  background: transparent !important;
+}
+
+.cm-editor .jzm-syntax {
+  background: transparent !important;
+}
+
+.cm-editor .jzm-syntax-adjective {
+  --jzm-syntax-color: var(--jzm-syntax-adjective-color, #a87a3b);
+}
+
+.cm-editor .jzm-syntax-noun {
+  --jzm-syntax-color: var(--jzm-syntax-noun-color, #cf5c57);
+}
+
+.cm-editor .jzm-syntax-adverb {
+  --jzm-syntax-color: var(--jzm-syntax-adverb-color, #8c63d9);
+}
+
+.cm-editor .jzm-syntax-verb {
+  --jzm-syntax-color: var(--jzm-syntax-verb-color, #4b86d9);
+}
+
+.cm-editor .jzm-syntax-conjunction {
+  --jzm-syntax-color: var(--jzm-syntax-conjunction-color, #49a66a);
+}
+
+.cm-editor.jzm-syntax-mode-color .jzm-syntax {
+  color: var(--jzm-syntax-color) !important;
+}
+
+.cm-editor.jzm-syntax-mode-underline .jzm-syntax {
+  color: var(--jzm-syntax-color) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--jzm-syntax-color) !important;
+  text-underline-offset: 0.1em;
+}
+
+.cm-editor.jzm-syntax-mode-background .jzm-syntax {
+  color: var(--jzm-syntax-color) !important;
+  box-shadow: inset 0 -0.5em color-mix(in srgb, var(--jzm-syntax-color) 16%, transparent);
+}
+
+.cm-editor .jzm-stylecheck {
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.12em;
+}
+
+.cm-editor .jzm-stylecheck-fillers {
+  --jzm-stylecheck-color: var(--jzm-stylecheck-fillers-color, #e9b552);
+}
+
+.cm-editor .jzm-stylecheck-cliches {
+  --jzm-stylecheck-color: var(--jzm-stylecheck-cliches-color, #e76262);
+}
+
+.cm-editor .jzm-stylecheck-redundancies {
+  --jzm-stylecheck-color: var(--jzm-stylecheck-redundancies-color, #e79662);
+}
+
+.cm-editor .jzm-stylecheck-weak {
+  --jzm-stylecheck-color: var(--jzm-stylecheck-weak-color, #6eaaf0);
+}
+
+.cm-editor .jzm-stylecheck-custom {
+  --jzm-stylecheck-color: var(--jzm-stylecheck-custom-color, #6eaaf0);
+}
+
+.cm-editor .jzm-stylecheck-repetition {
+  --jzm-stylecheck-color: var(--jzm-stylecheck-repetition-color, #d96ee0);
+}
+
+.cm-editor.jzm-stylecheck-mode-strike .jzm-stylecheck:not(.jzm-stylecheck-repetition) {
+  text-decoration-line: line-through;
+  text-decoration-color: var(--jzm-stylecheck-color);
+}
+
+.cm-editor.jzm-stylecheck-mode-dotted .jzm-stylecheck:not(.jzm-stylecheck-repetition) {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--jzm-stylecheck-color);
+}
+
+.cm-editor.jzm-stylecheck-mode-wavy .jzm-stylecheck:not(.jzm-stylecheck-repetition) {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--jzm-stylecheck-color);
+}
+
+.cm-editor .jzm-stylecheck-repetition {
+  text-decoration-line: underline !important;
+  text-decoration-style: wavy !important;
+  text-decoration-color: var(--jzm-stylecheck-color) !important;
+  text-underline-offset: 0.12em;
+}
+
+body:has(.cm-editor.jzm-zen-active) .note-title-wrapper,
+body:has(.cm-editor.jzm-zen-active) .editor-status-bar,
+body:has(.cm-editor.jzm-zen-active) .warning-banner,
+body:has(.cm-editor.jzm-zen-active) .note-search-bar,
+body:has(.cm-editor.jzm-zen-active) .editor-toolbar {
+  display: none !important;
+}
+
+body:has(.cm-editor.jzm-zen-active) .note-editor-viewer-row.-show-viewer .viewer,
+body:has(.cm-editor.jzm-zen-active) .note-editor-viewer-row.-show-viewer .viewer > div,
+body:has(.cm-editor.jzm-zen-active) .note-editor-viewer-row.-show-viewer .viewer > div[class*="sc-"],
+body:has(.cm-editor.jzm-zen-active) .resizableLayoutItem:not(.rli-root):not(.rli-editor):not(:has(.rli-editor)),
+body:has(.cm-editor.jzm-zen-active) .resizableLayoutItem:not(.rli-root):not(.rli-editor):not(:has(.rli-editor)) > div,
+body:has(.cm-editor.jzm-zen-active) .resizableLayoutItem:not(.rli-root):not(.rli-editor):not(:has(.rli-editor)) > div[class*="sc-"] {
+  display: none !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  flex: 0 0 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+body:has(.cm-editor.jzm-zen-active) .note-editor-viewer-row,
+body:has(.cm-editor.jzm-zen-active) .note-editor-wrapper,
+body:has(.cm-editor.jzm-zen-active) .rli-editor,
+body:has(.cm-editor.jzm-zen-active) .note-editor-viewer-row.-show-viewer .editor,
+body:has(.cm-editor.jzm-zen-active) .resizableLayoutItem.rli-editor > div {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  flex: 1 1 auto !important;
+}
+
+body:has(.cm-editor.jzm-zen-active) .note-editor-viewer-row {
+  gap: 0 !important;
+}

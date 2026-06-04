@@ -1,0 +1,36 @@
+{
+	"manifest_version": 1,
+	"id": "io.arena.joplinzenmode",
+	"name": "Zen Mode",
+	"version": "1.0.0",
+	"app_min_version": "3.6",
+	"app_min_version_mobile": "3.6",
+	"platforms": [
+		"desktop",
+		"mobile"
+	],
+	"description": "A focused writing mode for Joplin's Markdown editor inspired by iA Writer: editor-only layout, centered typewriter scrolling, and current-paragraph focus.",
+	"author": "Arena.ai",
+	"homepage_url": "https://arena.ai",
+	"repository_url": "https://arena.ai",
+	"keywords": [
+		"zen",
+		"focus",
+		"writing",
+		"editor",
+		"markdown"
+	],
+	"categories": [
+		"appearance",
+		"editor",
+		"productivity"
+	],
+	"icons": {
+		"16": "images/icon16.png",
+		"32": "images/icon32.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+	"_publish_hash": "sha256:176290edb75969e73a526fdc28047c983082e2aaec873b170374eddd2db402bd",
+	"_publish_commit": ""
+}

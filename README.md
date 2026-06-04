@@ -2,6 +2,9 @@
 
 A focused writing mode for Joplin’s Markdown editor, inspired by iA Writer.
 
+<img src="_screenshots/ZenMode.png" width="600">
+<img src="_screenshots/StyleChecks_turnedOff.png" width="600">
+
 ## What it does
 
 Zen Mode trims the editing experience down to the text that matters most:
